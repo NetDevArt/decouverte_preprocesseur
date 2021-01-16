@@ -1,0 +1,17 @@
+// ---------------------
+// IMPORT FONT AWESOME
+// ---------------------
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+
+// Set the variable to find the path to the vendor webfonts
+// When collected, its in /fonts
+$fa-font-path: '../webpacked_src/fonts';
+
+// Import wanted styles
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid';
+
+// -----------------------------------------------------
+// IMPORT OTHER FONT LIBRARY (Material icons or other ?)
+// -----------------------------------------------------

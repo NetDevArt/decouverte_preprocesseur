@@ -1,0 +1,52 @@
+// Used as is : "@include box-shadow( 0 0 5px #333 , inset 0 0 2px #666 );"
+@mixin box-shadow($params...) {
+  -webkit-box-shadow: #{$params};
+  -moz-box-shadow: #{$params};
+  -ms-box-shadow: #{$params};
+  -o-box-shadow: #{$params};
+  box-shadow: #{$params};
+}
+
+// use as @include keyframes(animation-name){ Content }
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($params...) {
+  -webkit-animation: #{$params};
+  -moz-animation: #{$params};
+  -ms-animation: #{$params};
+  -o-animation: #{$params};
+  animation: #{$params};
+}
+
+// <property> <duration> <timing-function> <delay>
+@mixin transition($params...) {
+  -webkit-transition: #{$params};
+  -moz-transition: #{$params};
+  -ms-transition: #{$params};
+  -o-transition: #{$params};
+  transition: #{$params};
+}
+
+@mixin transform($params...){
+  -webkit-transform: #{$params};
+  -moz-transform: #{$params};
+  -ms-transform: #{$params};
+  -o-transform: #{$params};
+  transform: #{$params};
+}
